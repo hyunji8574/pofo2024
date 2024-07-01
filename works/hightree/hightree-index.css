@@ -1,0 +1,822 @@
+/* 
+    Reset Style
+ */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    font-weight: normal;
+    color: #343837;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button,
+input {
+    background: none;
+}
+
+ul,
+ol,
+li,
+dl {
+    list-style: none;
+}
+
+title,
+a,
+span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.clear-both::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*
+    Common
+*/
+
+@font-face {
+    font-family: 'NanumBarunGothicOTF';
+    font-weight: 400;
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumBarunGothicOTF';
+    font-weight: 200;
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumBarunGothicOTF';
+    font-weight: 700;
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumBarunGothicOTF';
+    font-weight: 100;
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.ttf) format("truetype");
+}
+
+.text-hide,
+.img {
+    display: inline-block;
+    text-indent: -10000px;
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "NanumBarunGothicOTF", "Nanum Gothic";
+    background-color: #ffffff;
+    overflow-x: hidden;
+    word-break: keep-all;
+}
+
+.grid {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 106px;
+    background-color: #fff;
+}
+
+header .grid {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header .logo {
+    position: absolute;
+    top: 39px;
+    left: 0;
+}
+
+header .gnv {
+    position: absolute;
+    top: 64px;
+    left: 342px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+header .my {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    display: flex;
+    gap: 19px;
+    line-height: 14px;
+    letter-spacing: -0.4px;
+    font-size: 14px;
+}
+
+header .my a {
+    font-weight: 300;
+}
+
+header .search {
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    width: 193px;
+    height: 30px;
+    background-color: #d4f5f0;
+    border-radius: 15px;
+}
+
+header .search input {
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+header .search .btn {
+    float: right;
+    height: 100%;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+header .my .lang {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: fit-content;
+    top: 5px;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+    border: #474c551e solid 1px;
+    border-radius: 5px;
+}
+
+header .my .btn-lang:hover .lang {
+    display: block;
+}
+
+header .my .lang li a {
+    width: 100%;
+    padding: 10px 0;
+    font-family: "NanumBarunGothic";
+    font-weight: 300;
+    font-size: 14px;
+    color: #343837;
+}
+
+header .my .lang li a:hover {
+    background-color: #d4f5f0;
+}
+
+header .my .lang li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+header .my .lang li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+.main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 682px;
+}
+
+.main .slide ul.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main .slide ul.img li,
+.main .slide .text li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main .slide ul.img li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main .slide .text li .txt1 {
+    position: absolute;
+    top: 124px;
+    left: 42px;
+    font-size: 50.84px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 50.84px;
+}
+
+.main .slide .text li .txt2 {
+    position: absolute;
+    top: 195px;
+    left: 42px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.main .slide ul li.on {
+    display: block;
+}
+
+.main .slide-nav {
+    position: absolute;
+    top: 309px;
+    left: 42px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.main .slide-nav .btn {
+    display: block;
+    width: 34px;
+    height: 7px;
+    border-radius: 3.5px;
+    background-color: #fff;
+    margin-top: -4px;
+}
+
+.main .slide-nav .btn.on {
+    background: #ff8b58;
+}
+
+.main .slide-nav .arrow.right {
+    transform: scaleX(-1);
+}
+
+.main .form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    max-width: 1200px;
+    width: 100%;
+    height: 285px;
+}
+
+.main .form .nav {
+    position: absolute;
+    bottom: 232px;
+    left: 0;
+    width: 100%;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .form .nav li {
+    width: 100%;
+    height: 100%;
+    background-color: #81e3d4;
+    text-align: center;
+    font-size: 18px;
+    line-height: 63px;
+    color: rgba(52, 56, 55, 0.76);
+    z-index: 1;
+}
+
+.main .form .nav li:hover {
+    cursor: pointer;
+}
+
+.main .form .nav li.on {
+    background-color: #fff;
+    color: #343837;
+}
+
+.main .form .nav li:first-child {
+    border-radius: 31px 0 0 0;
+}
+
+.main .form .nav li:last-child {
+    border-radius: 0 31px 0 0;
+}
+
+.main .form .contain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 232px;
+    background-color: #fff;
+    box-shadow: 0 0 27px rgba(0, 14, 77, 0.16);
+}
+
+.form .contain .mileage {
+    float: left;
+    margin: 36px 0 0 49px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form .contain .mileage .btn-back {
+    position: relative;
+    width: 69px;
+    height: 22px;
+    background-color: #efefef;
+    border-radius: 11px;
+}
+
+.form .contain .mileage .btn {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 40px;
+    height: 26px;
+    background-color: #81e3d4;
+    border-radius: 13px;
+    box-shadow: 0 0 5.5px 0.5px rgba(0, 14, 77, 0.14);
+    /* transition: all 0.2s; */
+}
+
+.form .contain .mileage .btn::after {
+    content: "On";
+}
+
+.form .contain .mileage .btn:hover {
+    left: 0;
+    background-color: #fff;
+}
+
+.form .contain .mileage .btn:hover::after {
+    content: "Off";
+}
+
+.form .route {
+    float: left;
+    margin: 40px 0 0 162px;
+    display: flex;
+    gap: 53px;
+    font-size: 18px;
+}
+
+.form .route li {
+    padding: 0 3px 6px 3px;
+}
+
+.form .route li:hover,
+.form .route li.on {
+    cursor: pointer;
+    border-bottom: #ff8b58 2px solid;
+}
+
+.form .btn.star {
+    float: right;
+    margin: 39px 45px 0 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    background: #efefef url(./source/icon-star-off.png) no-repeat center;
+}
+
+.form .btn.star:hover,
+.form .btn.star.on {
+    cursor: pointer;
+    background: #efefef url(./source/icon-star-on.png) no-repeat center;
+}
+
+.form .input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 33px 45px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.form .input .box label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form .input .box input,
+.form .input .box select {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 6px;
+    height: 46px;
+    font-family: "NanumBarunGothicOTF";
+    border-bottom: #81e3d4 2px solid;
+}
+.form .input .box input[type="datetime-local"] {
+    position: relative;
+}
+
+.form .input .box input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+.form .input .box:nth-child(1) {
+    width: 143px;
+    margin-right: 22px;
+}
+
+.form .input .box:nth-child(1) input {
+    background: url(./source/icon-locate.png) no-repeat right;
+}
+
+.form .input .box:nth-child(3) {
+    width: 143px;
+    margin-right: 38px;
+}
+
+.form .input .box:nth-child(3) input {
+    background: url(./source/icon-locate.png) no-repeat right;
+}
+
+.form .input .box:nth-child(4) {
+    width: 233px;
+    margin-right: 38px;
+}
+
+.form .input .box:nth-child(5) {
+    width: 174px;
+    margin-right: 38px;
+}
+
+.form .input .box:nth-child(6) {
+    width: 124px;
+    margin-right: 38px;
+}
+
+.form .submit {
+    position: absolute;
+    bottom: 39px;
+    right: 45px;
+    width: 94px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 13px;
+    background-color: #81e3d4;
+}
+
+.form .submit:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+.best {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    padding: 125px 0 110px 0;
+}
+
+.best .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.best .title span {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 49px;
+}
+
+.best .nav {
+    position: absolute;
+    display: flex;
+    width: 113%;
+    top: 249px;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: space-between;
+}
+
+.best .slide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    overflow: hidden;
+}
+
+.best .slide a {
+    position: relative;
+    width: 273px;
+    height: 343px;
+    border-radius: 13px;
+    box-shadow: 0px 3px 8.3px 0.7px rgba(0, 14, 77, 0.14);
+}
+
+.best .slide a .contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 157px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 13px 13px 0 0;
+    padding: 30px 0 0 28px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.best .slide a .contain .txt1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.best .slide a .contain .txt2 {
+    position: absolute;
+    bottom: 46px;
+    left: 29px;
+}
+
+.best .slide a .contain .txt3 {
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    left: 29px;
+}
+
+.best .slide a .contain .color {
+    color: #ff8b58;
+    font-size: 18px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.notice {
+    position: relative;
+    width: 100%;
+    background-color: rgb(129, 227, 212, 0.15);
+    padding: 72px 0 75px 0;
+}
+
+.notice .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.notice .list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.btn.full {
+    width: 112px;
+    height: 37px;
+    background: url(./source/btn-full.png) no-repeat center;
+    border-radius: 18.5px;
+    float: right;
+}
+
+.notice .list li a {
+    position: relative;
+    width: 365px;
+    height: 177px;
+    background-color: #fff;
+    padding: 25px 31px;
+    border-radius: 16px;
+    box-shadow: 0px 7px 7px 0 rgba(0, 14, 77, 0.01);
+}
+
+.notice .list .label {
+    position: absolute;
+    top: 25px;
+    left: 32px;
+    width: 81px;
+    height: 28px;
+    border-radius: 14px;
+    border: solid 2px #81e3d4;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.notice .list .label.warning {
+    border-color: #ff8b58;
+}
+
+.notice .list .text {
+    position: absolute;
+    top: 70px;
+    left: 31px;
+    font-size: 18.5px;
+    line-height: 1.38;
+}
+
+.notice .list .date {
+    position: absolute;
+    right: 35px;
+    bottom: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5c6160;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+.event {
+    position: relative;
+    width: 100%;
+    padding: 78px 0 115px 0;
+}
+
+.event .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.event .list {
+    margin-top: 77px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event .list li a {
+    width: 380px;
+    height: 486px;
+    box-shadow: 0px 3px 7px 0 rgba(0, 14, 77, 0.04);
+    border-radius: 16px;
+}
+
+.event .list .img {
+    width: 100%;
+    height: 380px;
+}
+
+.event .list .contain {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+}
+
+.event .list .contain .label {
+    position: absolute;
+    font-size: 22px;
+    color: #343837;
+    top: 25px;
+    left: 20px;
+}
+
+.event .list .contain .date {
+    position: absolute;
+    right: 20px;
+    top: 73px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5c6160;
+}
+
+/* ------------------------------------------------------------------------------------ */
+.service {
+    position: relative;
+    width: 100%;
+    padding: 67px 0 102px 0;
+    background-color: rgb(129, 227, 212, 0.15);
+}
+
+.service .title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.service .list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.service .list li {
+    width: 165px;
+}
+
+.service .list .img {
+    width: 100%;
+    height: 165px;
+    border-radius: 16px;
+    box-shadow: 0px 7px 7px 0 rgba(0, 14, 77, 0.01);
+    background-color: #fff;
+}
+
+.service .list .label {
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.footer {
+    background-color: #343837;
+    width: 100%;
+    padding: 59px 0 60px 0;
+}
+
+.footer .grid {
+    padding: 0 30px;
+}
+
+.footer a,
+.footer span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer .sns {
+    float: right;
+    margin-right: 355px;
+    display: flex;
+    gap: 30px;
+}
+
+.footer .sns a {
+    width: 25px;
+    height: 25px;
+}
+
+.footer .menu {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .menu li a {
+    margin-top: 6px;
+}
+
+.footer .text {
+    line-height: 1.69;
+}
