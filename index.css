@@ -1,403 +1,1348 @@
+@charset "UTF-8";
 /* 
     Reset Style
  */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: "Noto Sans KR", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: #001959;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #001959;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button,
 input {
-    background: none;
+  background: none;
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 ul,
 ol,
 li,
 dl {
-    list-style: none;
+  list-style: none;
 }
 
 title,
 a,
 span {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .clear-both::after {
-    display: block;
-    content: "";
-    clear: both;
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .text-hide {
-    text-indent: -9999px;
+  text-indent: -9999px;
 }
 
 .inner {
-    max-width: 1600px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* header---------------------------------------------------------- */
-
 header {
-    width: 100%;
-    height: 72px;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    border-bottom: solid 1px rgba(0, 25, 89, 0.1);
+  width: 100%;
+  height: 72px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-bottom: solid 1px rgba(0, 25, 89, 0.1);
 }
 
 header .logo {
-    position: absolute;
-    left: 0;
-    top: 18px;
-    font-size: 24px;
-    font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 18px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 header .menu {
-    position: absolute;
-    top: 23px;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 91px;
+  position: absolute;
+  top: 23px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 91px;
 }
 
 header .menu a {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* visual---------------------------------------------------------- */
-
 #visual {
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 72px;
-    position: relative;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 72px;
+  position: relative;
 }
 
 #visual .profile {
-    width: 100%;
-    height: 240px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.466) 55%, rgba(0, 0, 0, 0));
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  width: 100%;
+  height: 240px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.466) 55%, rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 #visual .inner {
-    display: flex;
-    align-items: center;
-    gap: 27px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
 }
 
 #visual .profile .photo {
-    width: 148px;
-    height: 148px;
-    /* border: solid 1px rgba(0, 25, 89, 0.1); */
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  width: 148px;
+  height: 148px;
+  /* border: solid 1px rgba(0, 25, 89, 0.1); */
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #visual .bio {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #fff;
 }
 
 #visual .bio .my-name {
-    font-size: 36px;
-    font-weight: 500;
-    color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
 }
 
 #visual .bio .my-info {
-    display: flex;
-    gap: 44px;
+  display: flex;
+  gap: 44px;
 }
 
 #visual .bio .my-info li {
-    position: relative;
-    color: #fff;
-    font-weight: 300;
+  position: relative;
+  color: #fff;
+  font-weight: 300;
 }
 
 #visual .bio .my-info li::after {
-    content: "";
-    width: 1px;
-    height: 14px;
-    background-color: rgba(255, 255, 255, 0.37);
-    position: absolute;
-    top: 6px;
-    right: -22px;
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.37);
+  position: absolute;
+  top: 6px;
+  right: -22px;
 }
 
 #visual .bio .my-info li:last-child::after {
-    display: none;
+  display: none;
 }
 
 /* latest---------------------------------------------------------- */
-
 #latest {
-    max-width: 1600px;
-    margin: 0 auto;
-    position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #latest .sub-title {
-    margin-top: 48px;
-    color: rgba(0, 25, 89, 0.3);
+  margin-top: 48px;
+  color: rgba(0, 25, 89, 0.3);
 }
 
 #latest .title {
-    margin-top: 3px;
-    font-size: 24px;
-    font-weight: 500;
+  margin-top: 3px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 #latest .list {
-    margin-top: 29px;
-    display: flex;
-    gap: 32px;
+  margin-top: 29px;
+  display: flex;
+  gap: 32px;
 }
 
 #latest .list li {
-    width: 277px;
-    height: 375px;
-    border: solid 1px rgba(0, 25, 89, 0.1);
-    position: relative;
-    overflow: hidden;
+  width: 277px;
+  height: 375px;
+  border: solid 1px rgba(0, 25, 89, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 #latest .list a img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* skills---------------------------------------------------------- */
-
 #skills {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-top: 42px;
-    position: relative;
-    display: flex;
-    align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 #skills .title {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 #skills .graph {
-    display: flex;
-    justify-content: center;
-    width: 824px;
-    height: 323px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  width: 824px;
+  height: 323px;
+  position: relative;
 }
 
 #skills .graph::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 77px;
-    left: 0;
-    background-color: rgba(0, 25, 89, 0.1);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 77px;
+  left: 0;
+  background-color: rgba(0, 25, 89, 0.1);
 }
 
 #skills .graph ul {
-    position: absolute;
-    bottom: 30px;
-    display: flex;
-    align-items: flex-end;
-    gap: 96px;
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  gap: 96px;
 }
 
 #skills .graph li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #skills .graph li .bar {
-    width: 32px;
-    /* height: 200px; */
-    position: relative;
-    margin-bottom: 23.3px;
+  width: 32px;
+  /* height: 200px; */
+  position: relative;
+  margin-bottom: 23.3px;
 }
 
 #skills .graph li .percent {
-    position: absolute;
-    top: 0;
-    left: 39px;
-    font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 39px;
+  font-size: 14px;
 }
 
 #skills .graph li:nth-child(1) .bar {
-    height: 160px;
-    background-color: #2388e4;
+  height: 160px;
+  background-color: #2388e4;
 }
 
 #skills .graph li:nth-child(2) .bar {
-    height: 140px;
-    background-color: #ff9f47;
+  height: 140px;
+  background-color: #ff9f47;
 }
 
 #skills .graph li:nth-child(3) .bar {
-    height: 180px;
-    background-color: #a152de;
+  height: 180px;
+  background-color: #a152de;
 }
 
 #skills .tags {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 #skills .tags li {
-    padding: 7px 17px;
-    background-color: rgba(0, 25, 89, 0.1);
-    text-align: center;
-    font-size: 15px;
+  padding: 7px 17px;
+  background-color: rgba(0, 25, 89, 0.1);
+  text-align: center;
+  font-size: 15px;
 }
 
 /* works---------------------------------------------------------- */
-
 #works {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-top: 110px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 110px;
 }
 
 #works .title {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 #works .title .number {
-    font-size: 24px;
-    font-weight: 500;
-    color: rgba(0, 25, 89, 0.3);
-    margin-left: 27px;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 25, 89, 0.3);
+  margin-left: 27px;
 }
 
 #works .list {
-    margin-top: 29px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #works .list li {
-    position: relative;
-    width: 377px;
-    height: 458px;
-    border: solid 1px rgba(0, 25, 89, 0.1);
-    overflow: hidden;
+  position: relative;
+  width: 377px;
+  height: 458px;
+  border: solid 1px rgba(0, 25, 89, 0.1);
+  overflow: hidden;
 }
 
 #works .list li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #works .list li img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* gallery---------------------------------------------------------- */
-
 #gallery {
-    max-width: 1600px;
-    margin: 147px auto 0 auto;
-    /* overflow-x: hidden; */
+  max-width: 1600px;
+  margin: 147px auto 203px auto;
+  /* overflow-x: hidden; */
 }
 
 #gallery .title {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 #gallery .list {
-    margin-top: 29px;
-    /* height: 455px; */
-    overflow: hidden;
+  margin-top: 29px;
+  /* height: 455px; */
+  overflow: hidden;
 }
 
 #gallery .list li img {
-    width: auto;
-    max-width: 475px;
-    height: 216px;
-    float: left;
-    border: solid 1px rgba(0, 25, 89, 0.1);
-    margin: 0 18px 18px 0;
+  width: auto;
+  max-width: 475px;
+  height: 216px;
+  float: left;
+  border: solid 1px rgba(0, 25, 89, 0.1);
+  margin: 0 18px 18px 0;
 }
 
 #gallery .list li img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* footer---------------------------------------------------------- */
-
 footer {
-    width: 100%;
-    height: 81px;
-    background-color: rgba(0, 25, 89, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 203px;
+  width: 100%;
+  height: 81px;
+  background-color: rgba(0, 25, 89, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 footer p {
-    position: relative;
+  position: relative;
 }
 
 footer p:nth-child(1)::after {
-    content: "";
-    width: 1px;
-    height: 14px;
-    background-color: #fff;
-    position: absolute;
-    top: 6px;
-    right: -20px;
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  position: absolute;
+  top: 6px;
+  right: -20px;
 }
+
+/* 크리스마스 전용----------------------------------------------------- */
+#content-box {
+  position: relative;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(237, 244, 246) 70%, rgb(190, 216, 223) 100%);
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+}
+
+header {
+  background-color: rgb(167, 57, 57);
+}
+
+header .logo,
+header .menu a {
+  color: #fff;
+}
+
+footer {
+  background-color: #6eac7b;
+}
+
+footer p {
+  color: #fff;
+}
+
+.snow {
+  position: absolute;
+  --size: 1vw;
+  width: var(--size);
+  height: var(--size);
+  background-color: #fff;
+  box-shadow: 0 5px 20px #ffffff;
+  border-radius: 50%;
+  top: -5vh;
+  z-index: -1;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--left-end), 2390px, 0);
+  }
+}
+.snow:nth-child(1) {
+  --size: 0.4vw;
+  --left-ini: -9vw;
+  --left-end: -9vw;
+  left: 84vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -3s;
+}
+
+.snow:nth-child(2) {
+  --size: 1vw;
+  --left-ini: -9vw;
+  --left-end: -1vw;
+  left: 4vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -18s;
+}
+
+.snow:nth-child(3) {
+  --size: 1vw;
+  --left-ini: -2vw;
+  --left-end: 5vw;
+  left: 96vw;
+  animation: snowfall 19s linear infinite;
+  animation-delay: -3s;
+}
+
+.snow:nth-child(4) {
+  --size: 0.6vw;
+  --left-ini: 9vw;
+  --left-end: -7vw;
+  left: 17vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -17s;
+}
+
+.snow:nth-child(5) {
+  --size: 0.4vw;
+  --left-ini: -9vw;
+  --left-end: -7vw;
+  left: 57vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(6) {
+  --size: 0.6vw;
+  --left-ini: 1vw;
+  --left-end: 10vw;
+  left: 2vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -17s;
+}
+
+.snow:nth-child(7) {
+  --size: 0.2vw;
+  --left-ini: -4vw;
+  --left-end: 6vw;
+  left: 87vw;
+  animation: snowfall 19s linear infinite;
+  animation-delay: -17s;
+}
+
+.snow:nth-child(8) {
+  --size: 1vw;
+  --left-ini: -5vw;
+  --left-end: -5vw;
+  left: 68vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -1s;
+}
+
+.snow:nth-child(9) {
+  --size: 0.8vw;
+  --left-ini: -2vw;
+  --left-end: -5vw;
+  left: 23vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -14s;
+}
+
+.snow:nth-child(10) {
+  --size: 0.4vw;
+  --left-ini: -9vw;
+  --left-end: 1vw;
+  left: 83vw;
+  animation: snowfall 21s linear infinite;
+  animation-delay: -13s;
+}
+
+.snow:nth-child(11) {
+  --size: 1vw;
+  --left-ini: 9vw;
+  --left-end: 3vw;
+  left: 8vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(12) {
+  --size: 0.4vw;
+  --left-ini: -7vw;
+  --left-end: -2vw;
+  left: 79vw;
+  animation: snowfall 21s linear infinite;
+  animation-delay: -14s;
+}
+
+.snow:nth-child(13) {
+  --size: 0.8vw;
+  --left-ini: -1vw;
+  --left-end: 7vw;
+  left: 18vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(14) {
+  --size: 0.4vw;
+  --left-ini: -3vw;
+  --left-end: -5vw;
+  left: 64vw;
+  animation: snowfall 19s linear infinite;
+  animation-delay: -12s;
+}
+
+.snow:nth-child(15) {
+  --size: 1vw;
+  --left-ini: 1vw;
+  --left-end: 10vw;
+  left: 14vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(16) {
+  --size: 1vw;
+  --left-ini: 9vw;
+  --left-end: -4vw;
+  left: 69vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(17) {
+  --size: 0.4vw;
+  --left-ini: -8vw;
+  --left-end: 5vw;
+  left: 27vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(18) {
+  --size: 0.8vw;
+  --left-ini: 7vw;
+  --left-end: -6vw;
+  left: 38vw;
+  animation: snowfall 21s linear infinite;
+  animation-delay: -4s;
+}
+
+.snow:nth-child(19) {
+  --size: 0.2vw;
+  --left-ini: -9vw;
+  --left-end: 3vw;
+  left: 78vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -14s;
+}
+
+.snow:nth-child(20) {
+  --size: 0.4vw;
+  --left-ini: -5vw;
+  --left-end: -4vw;
+  left: 82vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(21) {
+  --size: 0.4vw;
+  --left-ini: -7vw;
+  --left-end: -6vw;
+  left: 95vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(22) {
+  --size: 0.8vw;
+  --left-ini: -9vw;
+  --left-end: 1vw;
+  left: 9vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(23) {
+  --size: 1vw;
+  --left-ini: -6vw;
+  --left-end: -3vw;
+  left: 61vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -4s;
+}
+
+.snow:nth-child(24) {
+  --size: 0.2vw;
+  --left-ini: -9vw;
+  --left-end: -7vw;
+  left: 16vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.snow:nth-child(25) {
+  --size: 0.4vw;
+  --left-ini: 6vw;
+  --left-end: 1vw;
+  left: 50vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(26) {
+  --size: 0.4vw;
+  --left-ini: 7vw;
+  --left-end: -8vw;
+  left: 83vw;
+  animation: snowfall 21s linear infinite;
+  animation-delay: -12s;
+}
+
+.snow:nth-child(27) {
+  --size: 0.2vw;
+  --left-ini: -3vw;
+  --left-end: 9vw;
+  left: 27vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -2s;
+}
+
+.snow:nth-child(28) {
+  --size: 0.8vw;
+  --left-ini: -6vw;
+  --left-end: 2vw;
+  left: 28vw;
+  animation: snowfall 21s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(29) {
+  --size: 0.8vw;
+  --left-ini: -8vw;
+  --left-end: -5vw;
+  left: 71vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -6s;
+}
+
+.snow:nth-child(30) {
+  --size: 0.8vw;
+  --left-ini: -3vw;
+  --left-end: 3vw;
+  left: 85vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(31) {
+  --size: 0.8vw;
+  --left-ini: 1vw;
+  --left-end: 4vw;
+  left: 76vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -13s;
+}
+
+.snow:nth-child(32) {
+  --size: 0.2vw;
+  --left-ini: 9vw;
+  --left-end: -3vw;
+  left: 48vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -18s;
+}
+
+.snow:nth-child(33) {
+  --size: 0.8vw;
+  --left-ini: -4vw;
+  --left-end: 2vw;
+  left: 56vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(34) {
+  --size: 0.6vw;
+  --left-ini: 8vw;
+  --left-end: -7vw;
+  left: 57vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -12s;
+}
+
+.snow:nth-child(35) {
+  --size: 0.6vw;
+  --left-ini: 5vw;
+  --left-end: -9vw;
+  left: 39vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -16s;
+}
+
+.snow:nth-child(36) {
+  --size: 0.4vw;
+  --left-ini: -4vw;
+  --left-end: -5vw;
+  left: 40vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(37) {
+  --size: 0.8vw;
+  --left-ini: -6vw;
+  --left-end: -4vw;
+  left: 71vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -16s;
+}
+
+.snow:nth-child(38) {
+  --size: 0.6vw;
+  --left-ini: -4vw;
+  --left-end: 10vw;
+  left: 90vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(39) {
+  --size: 0.6vw;
+  --left-ini: -1vw;
+  --left-end: 4vw;
+  left: 18vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -4s;
+}
+
+.snow:nth-child(40) {
+  --size: 0.8vw;
+  --left-ini: 1vw;
+  --left-end: -5vw;
+  left: 29vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -20s;
+}
+
+.snow:nth-child(41) {
+  --size: 0.4vw;
+  --left-ini: -2vw;
+  --left-end: -6vw;
+  left: 89vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(42) {
+  --size: 0.2vw;
+  --left-ini: 5vw;
+  --left-end: 3vw;
+  left: 8vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -18s;
+}
+
+.snow:nth-child(43) {
+  --size: 0.4vw;
+  --left-ini: -5vw;
+  --left-end: 9vw;
+  left: 15vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(44) {
+  --size: 0.4vw;
+  --left-ini: 10vw;
+  --left-end: -2vw;
+  left: 59vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(45) {
+  --size: 0.6vw;
+  --left-ini: -6vw;
+  --left-end: -1vw;
+  left: 47vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -4s;
+}
+
+.snow:nth-child(46) {
+  --size: 0.8vw;
+  --left-ini: -8vw;
+  --left-end: 4vw;
+  left: 17vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(47) {
+  --size: 0.4vw;
+  --left-ini: 10vw;
+  --left-end: -8vw;
+  left: 90vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -20s;
+}
+
+.snow:nth-child(48) {
+  --size: 1vw;
+  --left-ini: -2vw;
+  --left-end: 8vw;
+  left: 77vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -6s;
+}
+
+.snow:nth-child(49) {
+  --size: 0.4vw;
+  --left-ini: -1vw;
+  --left-end: 6vw;
+  left: 57vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -6s;
+}
+
+.snow:nth-child(50) {
+  --size: 1vw;
+  --left-ini: 7vw;
+  --left-end: 9vw;
+  left: 51vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -14s;
+}
+
+.snow:nth-child(51) {
+  --size: 0.6vw;
+  --left-ini: 2vw;
+  --left-end: -5vw;
+  left: 41vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(52) {
+  --size: 0.2vw;
+  --left-ini: -3vw;
+  --left-end: -7vw;
+  left: 82vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -1s;
+}
+
+.snow:nth-child(53) {
+  --size: 1vw;
+  --left-ini: 6vw;
+  --left-end: 9vw;
+  left: 16vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(54) {
+  --size: 0.6vw;
+  --left-ini: 6vw;
+  --left-end: -3vw;
+  left: 9vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(55) {
+  --size: 0.6vw;
+  --left-ini: -6vw;
+  --left-end: 1vw;
+  left: 32vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(56) {
+  --size: 0.6vw;
+  --left-ini: -5vw;
+  --left-end: 8vw;
+  left: 92vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -2s;
+}
+
+.snow:nth-child(57) {
+  --size: 1vw;
+  --left-ini: 2vw;
+  --left-end: -5vw;
+  left: 43vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -18s;
+}
+
+.snow:nth-child(58) {
+  --size: 1vw;
+  --left-ini: 9vw;
+  --left-end: -9vw;
+  left: 11vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(59) {
+  --size: 1vw;
+  --left-ini: 8vw;
+  --left-end: 6vw;
+  left: 61vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(60) {
+  --size: 0.4vw;
+  --left-ini: 6vw;
+  --left-end: -2vw;
+  left: 67vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -1s;
+}
+
+.snow:nth-child(61) {
+  --size: 1vw;
+  --left-ini: 4vw;
+  --left-end: -9vw;
+  left: 30vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(62) {
+  --size: 0.2vw;
+  --left-ini: 2vw;
+  --left-end: 2vw;
+  left: 55vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -3s;
+}
+
+.snow:nth-child(63) {
+  --size: 0.2vw;
+  --left-ini: 8vw;
+  --left-end: -3vw;
+  left: 24vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(64) {
+  --size: 0.8vw;
+  --left-ini: 8vw;
+  --left-end: 10vw;
+  left: 95vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -14s;
+}
+
+.snow:nth-child(65) {
+  --size: 0.8vw;
+  --left-ini: -3vw;
+  --left-end: 3vw;
+  left: 63vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(66) {
+  --size: 1vw;
+  --left-ini: 7vw;
+  --left-end: -7vw;
+  left: 69vw;
+  animation: snowfall 19s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(67) {
+  --size: 0.8vw;
+  --left-ini: -7vw;
+  --left-end: 0vw;
+  left: 28vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(68) {
+  --size: 0.8vw;
+  --left-ini: 4vw;
+  --left-end: 2vw;
+  left: 14vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(69) {
+  --size: 0.2vw;
+  --left-ini: 10vw;
+  --left-end: 7vw;
+  left: 59vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(70) {
+  --size: 1vw;
+  --left-ini: -1vw;
+  --left-end: 4vw;
+  left: 100vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -13s;
+}
+
+.snow:nth-child(71) {
+  --size: 0.6vw;
+  --left-ini: -9vw;
+  --left-end: -1vw;
+  left: 52vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -10s;
+}
+
+.snow:nth-child(72) {
+  --size: 0.2vw;
+  --left-ini: -5vw;
+  --left-end: -8vw;
+  left: 59vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(73) {
+  --size: 0.4vw;
+  --left-ini: -6vw;
+  --left-end: -1vw;
+  left: 50vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(74) {
+  --size: 0.2vw;
+  --left-ini: -4vw;
+  --left-end: 1vw;
+  left: 40vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(75) {
+  --size: 0.4vw;
+  --left-ini: -8vw;
+  --left-end: -2vw;
+  left: 28vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -16s;
+}
+
+.snow:nth-child(76) {
+  --size: 0.4vw;
+  --left-ini: 4vw;
+  --left-end: -2vw;
+  left: 92vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.snow:nth-child(77) {
+  --size: 0.4vw;
+  --left-ini: 10vw;
+  --left-end: 4vw;
+  left: 100vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(78) {
+  --size: 1vw;
+  --left-ini: 9vw;
+  --left-end: 6vw;
+  left: 56vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(79) {
+  --size: 0.4vw;
+  --left-ini: 10vw;
+  --left-end: -3vw;
+  left: 80vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -8s;
+}
+
+.snow:nth-child(80) {
+  --size: 0.4vw;
+  --left-ini: 1vw;
+  --left-end: -9vw;
+  left: 45vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -15s;
+}
+
+.snow:nth-child(81) {
+  --size: 0.6vw;
+  --left-ini: -9vw;
+  --left-end: -2vw;
+  left: 36vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(82) {
+  --size: 1vw;
+  --left-ini: 1vw;
+  --left-end: 1vw;
+  left: 92vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(83) {
+  --size: 1vw;
+  --left-ini: -6vw;
+  --left-end: -6vw;
+  left: 85vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -15s;
+}
+
+.snow:nth-child(84) {
+  --size: 0.2vw;
+  --left-ini: 3vw;
+  --left-end: 3vw;
+  left: 74vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -18s;
+}
+
+.snow:nth-child(85) {
+  --size: 0.6vw;
+  --left-ini: 9vw;
+  --left-end: -8vw;
+  left: 9vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -10s;
+}
+
+.snow:nth-child(86) {
+  --size: 0.2vw;
+  --left-ini: 9vw;
+  --left-end: 6vw;
+  left: 23vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -1s;
+}
+
+.snow:nth-child(87) {
+  --size: 0.2vw;
+  --left-ini: 4vw;
+  --left-end: 0vw;
+  left: 72vw;
+  animation: snowfall 20s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(88) {
+  --size: 0.8vw;
+  --left-ini: 0vw;
+  --left-end: 3vw;
+  left: 9vw;
+  animation: snowfall 25s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(89) {
+  --size: 0.8vw;
+  --left-ini: 9vw;
+  --left-end: 10vw;
+  left: 3vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -6s;
+}
+
+.snow:nth-child(90) {
+  --size: 0.4vw;
+  --left-ini: 0vw;
+  --left-end: -1vw;
+  left: 76vw;
+  animation: snowfall 19s linear infinite;
+  animation-delay: -2s;
+}
+
+.snow:nth-child(91) {
+  --size: 0.4vw;
+  --left-ini: 10vw;
+  --left-end: 7vw;
+  left: 88vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -6s;
+}
+
+.snow:nth-child(92) {
+  --size: 0.4vw;
+  --left-ini: -9vw;
+  --left-end: -7vw;
+  left: 96vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -4s;
+}
+
+.snow:nth-child(93) {
+  --size: 1vw;
+  --left-ini: -5vw;
+  --left-end: 0vw;
+  left: 52vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -4s;
+}
+
+.snow:nth-child(94) {
+  --size: 1vw;
+  --left-ini: -6vw;
+  --left-end: 8vw;
+  left: 12vw;
+  animation: snowfall 18s linear infinite;
+  animation-delay: -9s;
+}
+
+.snow:nth-child(95) {
+  --size: 0.4vw;
+  --left-ini: -7vw;
+  --left-end: 8vw;
+  left: 16vw;
+  animation: snowfall 16s linear infinite;
+  animation-delay: -11s;
+}
+
+.snow:nth-child(96) {
+  --size: 0.8vw;
+  --left-ini: 6vw;
+  --left-end: 9vw;
+  left: 96vw;
+  animation: snowfall 23s linear infinite;
+  animation-delay: -17s;
+}
+
+.snow:nth-child(97) {
+  --size: 1vw;
+  --left-ini: -9vw;
+  --left-end: 8vw;
+  left: 9vw;
+  animation: snowfall 22s linear infinite;
+  animation-delay: -7s;
+}
+
+.snow:nth-child(98) {
+  --size: 1vw;
+  --left-ini: 5vw;
+  --left-end: -9vw;
+  left: 84vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -19s;
+}
+
+.snow:nth-child(99) {
+  --size: 0.6vw;
+  --left-ini: -1vw;
+  --left-end: 9vw;
+  left: 39vw;
+  animation: snowfall 17s linear infinite;
+  animation-delay: -5s;
+}
+
+.snow:nth-child(100) {
+  --size: 0.4vw;
+  --left-ini: -3vw;
+  --left-end: -4vw;
+  left: 60vw;
+  animation: snowfall 24s linear infinite;
+  animation-delay: -20s;
+}
+
+/*# sourceMappingURL=index.css.map */
