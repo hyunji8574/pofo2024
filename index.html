@@ -12,7 +12,6 @@
     <script src="./index.js"></script>
     <title>Pofo</title>
 </head>
-
 <body>
     <!-- header -->
     <header id="header">
@@ -41,28 +40,29 @@
             </div>
         </div>
     </section>
-    <!-- latest -->
-    <section id="latest">
+    <div id="content-box">
+        <!-- latest -->
+        <section id="latest">
         <p class="sub-title">Latest</p>
         <p class="title">최근 작품</p>
         <ul class="list">
             <li><a href="#works"><img src="./source/index-curo.png" alt="indesx-curo"></a></li>
             <li><a href="#works"><img src="./source/index-avenue.png" alt="index-avenue"></a></li>
+        </li>
+    </ul>
+</section>
+<!-- skills -->
+<section id="skills">
+    <p class="title">Skils</p>
+    <div class="graph">
+        <ul>
+            <li>
+                <div class="bar">
+                    <p class="percent">80%</p>
+                </div>
+                <p class="skill-name">Photoshop</p>
             </li>
-        </ul>
-    </section>
-    <!-- skills -->
-    <section id="skills">
-        <p class="title">Skils</p>
-        <div class="graph">
-            <ul>
-                <li>
-                    <div class="bar">
-                        <p class="percent">80%</p>
-                    </div>
-                    <p class="skill-name">Photoshop</p>
-                </li>
-                <li>
+            <li>
                     <div class="bar">
                         <p class="percent">70%</p>
                     </div>
@@ -106,12 +106,13 @@
             <li><img src="./source/gallery-6.png" alt="갤러리 이미지6"></li>
         </ul>
     </section>
+</div>
     <!-- footer -->
     <footer>
         <p>©2024 Hyunji-Bae</p>
         <p>All rights reserved</p>
     </footer>
-
+    
     <!-- 작품별 팝업창 -->
     <section id="popup-works">
         <div class="inner">
@@ -126,15 +127,15 @@
                         <p class="title">Curo</p>
                         <p class="text">유기농 식품판매 전문 브랜드를 컨셉으로 디자인했습니다.<br>
                             초안을 한층 더 세련되고 가시성 좋은 디자인으로 변경해 완성했습니다.</p>
-                        <div class="palette">
-                            <div class="color" style="background-color: #95cd94;"></div>
-                            <div class="color" style="background-color: #ef4a35;"></div>
-                        </div>
-                        <p class="tags">
-                            <span>#쇼핑몰</span>
-                            <span>#Figma</span>
-                            <span>#자연</span>
-                            <span>#안정적</span>
+                            <div class="palette">
+                                <div class="color" style="background-color: #95cd94;"></div>
+                                <div class="color" style="background-color: #ef4a35;"></div>
+                            </div>
+                            <p class="tags">
+                                <span>#쇼핑몰</span>
+                                <span>#Figma</span>
+                                <span>#자연</span>
+                                <span>#안정적</span>
                         </p>
                         <a href="./works/curo/curo-index.html" target="_blank"><span>사이트 보기</span><img src="./source/icon-newpage.png" alt="icon-newpage"></a>
                     </div>
@@ -148,7 +149,7 @@
                         <p class="title">Avenue</p>
                         <p class="text">문화 예술 공연, 연극, 전시 등 다양한 활동 프로그램을 예매할 수 있는 사이트입니다.<br>
                             메인·소개·공연 총 3페이지 구성이며, 모던함과 세련됨, 좋은 가독성을 목표로 디자인했습니다.</p>
-                        <div class="palette">
+                            <div class="palette">
                             <div class="color" style="background-color: #07071c;"></div>
                             <div class="color" style="background-color: #c6003b;"></div>
                             <div class="color" style="background-color: #363693;"></div>
@@ -172,21 +173,21 @@
                         <p class="text">가상의 항공사를 주제로 한 디자인입니다.<br>
                             상쾌하고 맑은 이미지를 생각해 디자인했고 이용자가 편리하도록<br>
                             항공을 예매할 수 있는 창을 가장 앞쪽에 배치했습니다.</p>
-                        <div class="palette">
-                            <div class="color" style="background-color: #81e3d4;"></div>
-                            <div class="color" style="background-color: #ff8b58;"></div>
+                            <div class="palette">
+                                <div class="color" style="background-color: #81e3d4;"></div>
+                                <div class="color" style="background-color: #ff8b58;"></div>
+                            </div>
+                            <p class="tags">
+                                <span>#항공</span>
+                                <span>#Photoshop</span>
+                                <span>#상쾌함</span>
+                                <span>#시원함</span>
+                                <span>#피서</span>
+                            </p>
+                            <a href="./works/hightree/hightree-index.html" target="_blank"><span>사이트 보기</span><img src="./source/icon-newpage.png" alt="icon-newpage"></a>
                         </div>
-                        <p class="tags">
-                            <span>#항공</span>
-                            <span>#Photoshop</span>
-                            <span>#상쾌함</span>
-                            <span>#시원함</span>
-                            <span>#피서</span>
-                        </p>
-                        <a href="./works/hightree/hightree-index.html" target="_blank"><span>사이트 보기</span><img src="./source/icon-newpage.png" alt="icon-newpage"></a>
-                    </div>
-                </li>
-                <!--4 -->
+                    </li>
+                    <!--4 -->
                 <li>
                     <div class="img-container">
                         <img src="./source/index-areum.png" alt="index-areum">
@@ -244,24 +245,24 @@
                         <p class="title">아이콘 디자인 목업</p>
                         <p class="date">2024-06-22</p>
                     </div>
-                <li>
-                    <div class="img-container">
-                        <img src="./source/gallery-4.png" alt="gallery-4">
-                    </div>
-                    <div class="content">
-                        <p class="title">우산 디자인 배너</p>
-                        <p class="date">2024-06-22</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="img-container">
-                        <img src="./source/gallery-5.png" alt="gallery-5">
-                    </div>
-                    <div class="content">
-                        <p class="title">일러스트 목업을 활용한 배너</p>
-                        <p class="date">2024-06-17</p>
-                    </div>
-                </li>
+                    <li>
+                        <div class="img-container">
+                            <img src="./source/gallery-4.png" alt="gallery-4">
+                        </div>
+                        <div class="content">
+                            <p class="title">우산 디자인 배너</p>
+                            <p class="date">2024-06-22</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <img src="./source/gallery-5.png" alt="gallery-5">
+                        </div>
+                        <div class="content">
+                            <p class="title">일러스트 목업을 활용한 배너</p>
+                            <p class="date">2024-06-17</p>
+                        </div>
+                    </li>
                 <li>
                     <div class="img-container">
                         <img src="./source/gallery-6.png" alt="gallery-6">
@@ -275,5 +276,13 @@
         </div>
     </section>
 </body>
+    <!-- 크리스마스 전용 -->
+    <script>
+        for (i=0;i<100;i++) {
+            var snow = document.createElement("div");
+            snow.classList.add("snow");
+            document.getElementById("content-box").appendChild(snow);
+        }
+     </script>
 
 </html>
